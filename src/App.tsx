@@ -7,9 +7,9 @@ export const App: React.FC = () => {
   };
 
   useEffect(() => {
-    document.addEventListener('keyup', handleClick);
+    document.addEventListener('keydown', handleClick);
 
-    return () => document.removeEventListener('keyup', handleClick);
+    return () => document.removeEventListener('keydown', handleClick);
   }, []);
 
   return (
